@@ -1,0 +1,42 @@
+﻿Mods: {
+	EndlessEverything: {
+		Config: {
+			RainbowSprite: {
+				Label: Rainbow Sprites
+				Tooltip: Makes endless items get all disco-y
+			}
+			RainbowTooltip: {
+				Label: Rainbow Tooltips
+				Tooltip: Makess the "Endless" tooltip get all disco-y
+			}
+			StartEnabled: {
+				Label: Always Enabled
+				Tooltip: Items will become endless even if you don't use the Endless Enabler. Whether or not it's enabled through Endless Enabler will still be remembered in the background
+			}
+			UseResearch: {
+				Label: Use Research Counts
+				Tooltip: Will use each items research amount for the limit to become endless. Doesn't disable other ways of becoming endless. Researched items are always endless
+			}
+			Ammo: {
+				Label: Ammo Limit
+				Tooltip: Stack size needed for ammo to become endless
+			}
+			Consumable: {
+				Label: Consumable Limit
+				Tooltip: Stack size needed for consumable items to become endless
+			}
+			Potion: {
+				Label: Potion Limit
+				Tooltip: Stack size needed for potions to become endless
+			}
+			OverrideEnable: {
+				Label: Override Enables
+				Tooltip: Define specific items and their thresholds to become endless
+			}
+			OverrideDisable: {
+				Label: Override Disables
+				Tooltip: Define specific items to not become endless (unless researched)
+			}
+		}
+	}
+}
