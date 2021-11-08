@@ -91,7 +91,7 @@ namespace EndlessEverything
 
         public static bool IsConsumable(Item item)
         {
-            if (item.createTile != -1 || item.createWall != -1 || item.accessory || item.buffType != 0) // blocks and potions count as consumable
+            if (item.createTile != -1 || item.createWall != -1 || item.accessory || item.buffType != 0 || IsAmmo(item)) // blocks and potions count as consumable
             {
                 return false;
             }

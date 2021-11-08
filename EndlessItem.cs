@@ -32,7 +32,8 @@ namespace EndlessEverything
 
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (EndlessDeterminer.IsEndless(item, Main.player[Main.myPlayer]))
+            Player p = Main.player[Main.myPlayer];
+            if (EndlessDeterminer.IsEndless(item, p))
             {
                 if (cfg.RainbowTooltip)
                 {
@@ -46,6 +47,22 @@ namespace EndlessEverything
                 {
                     tooltips.Add(new TooltipLine(Mod, "CoinEasterEgg", "[c/4f4f4f:No, not like that]"));
                 }
+                /*if (EndlessDeterminer.IsAmmo(item))
+                {
+                    tooltips.Add(new TooltipLine(Mod, "DebugAmmo", "Endless Ammo"));
+                }
+                if (EndlessDeterminer.IsConsumable(item))
+                {
+                    tooltips.Add(new TooltipLine(Mod, "DebugConsumable", "Endless Consumable"));
+                }
+                if (EndlessDeterminer.IsPotion(item))
+                {
+                    tooltips.Add(new TooltipLine(Mod, "DebugPotion", "Endless Potion"));
+                }
+                if (EndlessDeterminer.IsPlaceable(item))
+                {
+                    tooltips.Add(new TooltipLine(Mod, "DebugPlaceable", "Endless Placeable"));
+                }*/
             }
         }
 
